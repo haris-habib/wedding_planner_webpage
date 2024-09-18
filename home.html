@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Elegant Weddings & Events</h1>
+            <p>We Make Your Dream Day a Reality</p>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="gallery">
+            <button onclick="portfolio_turnstile(0)">prev</button>
+
+            <div class="gallery-item">
+                <img id = "portfolio_image" src="event.jpg" alt="Event 1">
+                <p id = "portfolio_name">Elegant Outdoor Wedding</p>
+            </div>
+            <button onclick="portfolio_turnstile(1)">next</button>
+
+        </div>
+    </section>
+
+    <!-- Venue Collaborations Section -->
+    <section id="venues">
+        <h2>Venue Collaborations</h2>
+        <div class = "gallery">
+            <button onclick="venue_turnstile(0)">prev</button>
+
+            <div class="gallery-item">
+                <img id = "venue_image" src="event.jpg" alt="Event 1">
+                <p id = "venue_name">Grand Ballroom</p>
+            </div>
+            <button onclick="venue_turnstile(1)">next</button>
+
+        </div>
+
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>What Our Clients Say</h2>
+        <div class="reviews">
+            <blockquote>
+                <p id = "review_text">"The team made our wedding day absolutely magical! Everything was perfect, from the flowers to the photography."</p>
+                <cite id = "reviewer">- Emily & John</cite>
+            </blockquote>
+        </div>
+        <button onclick="review_turnstile(1)">next</button>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elegant Weddings & Events</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
